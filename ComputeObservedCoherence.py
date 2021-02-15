@@ -103,6 +103,13 @@ def calc_topic_coherence(topic_words):
             w2 = " ".join(topic_word.split(colloc_sep))
             if target_word != topic_word:
                 topic_assoc.append(calc_assoc(w1, w2))
+    print('===============================')
+    print('===============================')
+    print('===============================')
+    print('===============================')
+
+    print(float(sum(topic_assoc)))
+    print(len(topic_assoc))
 
     return float(sum(topic_assoc))/len(topic_assoc)
 
@@ -123,7 +130,7 @@ for line in wc_file:
             key = data[1] + "|" + data[0]
         wordcount[key] = int(data[2])
     else:
-        print "ERROR: wordcount format incorrect. Line =", line
+        print('ERROR: wordcount format incorrect. Line =', line)
         raise SystemExit
 
 #get the total number of windows
@@ -149,9 +156,9 @@ for item in tc_items:
     print ("[%.2f] (" % mean_coherence),
     for i in item[1]:
         print ("%.2f;" % i),
-    print ")", topic_tw[item[0]]
+    print(")", topic_tw[item[0]])
 
 #print the overall topic coherence for all topics
-print "=========================================================================="
-print "Average Topic Coherence = %.3f" % np.mean(mean_coherence_list)
-print "Median Topic Coherence = %.3f" % np.median(mean_coherence_list)
+print("==========================================================================")
+print("Average Topic Coherence = %.3f" % np.mean(mean_coherence_list))
+print("Median Topic Coherence = %.3f" % np.median(mean_coherence_list))

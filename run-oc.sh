@@ -9,7 +9,7 @@
 #parameters
 metric="npmi" #evaluation metric: pmi, npmi or lcp
 #input
-topic_file="data/topics.txt"
+topic_file="data/4k_perlineperab.txt"
 ref_corpus_dir="ref_corpus/wiki"
 #output
 wordcount_file="wordcount/wc-oc.txt"
