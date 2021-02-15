@@ -11,7 +11,7 @@
 pmi_type="npmi" #pmi type: pmi or npmi
 svm_input_dir="svm_rank/input_files" #path to store generated svm input
 #input
-topic_file="data/topics-with-intruder.txt"
+topic_file="data/4k_perlineperab.txt"
 intruder_file="data/intruder.txt"
 ref_corpus_dir="ref_corpus/wiki"
 #output

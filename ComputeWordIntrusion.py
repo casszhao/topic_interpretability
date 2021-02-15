@@ -23,7 +23,7 @@ parser.add_argument("predictions_output", help="predictions output from SVM")
 args = parser.parse_args()
 
 #parameters
-debug = True
+debug = False
 
 #input
 topic_file = codecs.open(args.topic_file, "r", "utf-8")
@@ -73,9 +73,9 @@ for (qid, line_ids) in sorted(qid_line_id.items()):
             ww_id = line_id
     
     if debug:
-        print ("[%.1f]" % hit), " ".join(qid_tw[qid])
-        print "\tSystem Chosen Intruder Word =", line_id_word[ww_id]
-        print "\tTrue Intruder Word =", line_id_word[line_ids[0]]
+        print("[%.1f]" % hit), " ".join(qid_tw[qid]))
+        print("\tSystem Chosen Intruder Word =", line_id_word[ww_id])
+        print("\tTrue Intruder Word =", line_id_word[line_ids[0]])
         print
     else:
-        print hit
+        print(hit)

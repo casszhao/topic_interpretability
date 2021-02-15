@@ -9,8 +9,8 @@
 #parameters
 metric="npmi" #evaluation metric: pmi, npmi or lcp
 #input
-topic_file="data/4k_perlineperab.txt"
-ref_corpus_dir="ref_corpus/wiki"
+topic_file="data/lda_original_topics_processed.txt" # one line per topic, display top-n words
+ref_corpus_dir="ref_corpus/corpus"
 #output
 wordcount_file="wordcount/wc-oc.txt"
 oc_file="results/topics-oc.txt"

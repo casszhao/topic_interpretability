@@ -273,5 +273,6 @@ po.close()
 po.join()
 
 #all done, print the word counts
-for tuple in sorted(word_count.items()):
-    print(tuple[0] + "|" + str(tuple[1]))
+# for tuple in sorted(word_count.items()):
+#     print(tuple[0], ' ', str(tuple[1]), ' ', tuple[0]/str(tuple[1]),)
+#print(word_count)
